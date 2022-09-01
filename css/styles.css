@@ -1,4 +1,4 @@
-/* ! minireset.css v0.0.6 | Licence MIT | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3 ,h4,h5,h6{margin:0;padding:0}h1,h2,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}bouton, input,select{margin:0}html{box-sizing:border-box}*,*::before,{height:auto;max-width:100% }iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/* ! minireset.css v0.0.6 | Licence MIT | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3 ,h4,h5,h6{margin:0;padding:0}h1,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}bouton, input,select{margin:0}html{box-sizing:border-box}*,*::before,{height:auto;max-width:100% }iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 *::after{box-sizing:inherit}.imgacti,
 body {
     display: flex;
@@ -20,9 +20,10 @@ h3{
 }
 
 .titreheader {
-    height: 10%;
-    width: 10%;
+    height: 8%;
+    width: 8%;
     padding-bottom: 25px;
+    padding-top: 5%;
 }
 
 #sous_header {
@@ -55,7 +56,7 @@ margin-bottom: 12px;
 
 .headerTopList{
     display: flex;
-    padding-top: 30px;
+    padding-top: 30%;
     list-style: none;
 }
 
@@ -63,14 +64,12 @@ margin-bottom: 12px;
     margin-right: 50px;
     height: 100%;
     text-decoration: none;
-     
-    color: lightgray;
+    color:black;
 }
 
 .sousTitreText{
     margin-bottom: 15px;
     margin-left: 0%;
-    color: lightgray;
 }
 
 .searchConteneur{
@@ -81,10 +80,10 @@ margin-bottom: 12px;
 }
 
 .searchButton{
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.733);
     color: white;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-width: 0px;
     padding: 14px;
 }
@@ -92,6 +91,7 @@ margin-bottom: 12px;
 .searchInput{
     height:100%;
     border-style: solid;
+    border-color:rgba(211, 211, 211, 0.328); 
     border-width: 1px;
     color: black;
     padding-left: 10px;
@@ -127,13 +127,11 @@ margin-bottom: 12px;
 
 .filterElement{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-decoration: none;
     border-style: solid;
     border-radius: 30px;
     border-color: rgba(211, 211, 211, 0.865);
-    max-height: 35px;
     margin-left: 15px;
 }
 
@@ -141,8 +139,8 @@ margin-bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
-    border-right-style: solid;
+    background-color:lightblue;
+    color:rgba(0, 0, 255, 0.733);
     border-width: 1px;
     border-radius: 20px;
     height: 35px;
@@ -158,7 +156,6 @@ margin-bottom: 12px;
     margin-left: 5px;
     margin-right: 10px;
     color: black;
-    font-weight: 500;
 }
 
 .informationConteneur{
@@ -170,8 +167,6 @@ margin-bottom: 12px;
 
 .informationText{
     margin-left: 15px;
-     
-    color:gray;
 }
 
 .hebergements_populaire {
@@ -195,10 +190,17 @@ margin-bottom: 12px;
     width: calc(65% - 10px)
 }
 
-.titre_heber {
+.titre_heber { 
     padding-left: 20px;
     padding-top: 15px;
-
+    font-weight: 500;
+    font-size: 13px;
+    margin: 8px;
+    margin-left: 10px;
+}
+.titreHeb {
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .conteneur_articlesheb {
@@ -224,12 +226,6 @@ margin-bottom: 12px;
     max-height: 55%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-
-.titreHeb{
-    font-size: 16px;
-    margin: 8px;
-    margin-left: 10px;
 }
 
 .starheb {
@@ -261,6 +257,11 @@ margin-bottom: 12px;
     display: flex;
 }
 
+.starpopublack {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
 .descriptionHeb{
     font-size: 13px;
     color : grey;
@@ -268,24 +269,20 @@ margin-bottom: 12px;
 }
 
 
-.afficherplus{
+#afficherplus{
     display: flex;
     padding-left: 20px;
-    background-color: blue;
     font-size: 18px;
     font-weight: bold;
-    background-color: transparent;
     border-width: 0px;
     text-decoration: none;
     color: black;
-    font-weight: 500;
 }
 
 .populaires {
     display: flex;
     flex-direction: column;
     background-color:rgba(211, 211, 211, 0.328);
-    width: 30%;
     border-radius: 20px;
     font-size:15px;
     width: calc(35% - 10px)
@@ -298,6 +295,8 @@ margin-bottom: 12px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top:15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .conteneur_articlespop {
@@ -363,7 +362,7 @@ margin-bottom: 12px;
     flex: 1 0 0;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: -5px 5px 5px lightgrey;
+    box-shadow: -1px 2px 2px lightgrey;
 }
 
 .imgActiConteneur{
@@ -376,9 +375,6 @@ margin-bottom: 12px;
     overflow: hidden
 }
 
-.imgacti2 {
-}
-
 .titreActiConteneur{
     display: flex;
     flex-wrap: wrap;
@@ -387,6 +383,7 @@ margin-bottom: 12px;
     align-items: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin: 10px;
 }
 
 footer {
@@ -438,15 +435,15 @@ footer .wrapper {
     color: gray;
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 900px)
 {
     .hebergements_populaire {
         display: flex;
         flex-direction: column;
         background-color: rgb(255, 255, 255);
         border-radius: 20px;
-        width: 100%;
-        height: 100%;
+        width: 55%;
+        height: 55%;
         margin: 40px;
     }
 
@@ -470,6 +467,10 @@ footer .wrapper {
         font-size:15px;
     }
 
+    .titre_acti{
+        padding-left: 4%;
+    }
+
     .activites {
         display: flex;
         flex-direction: column;
@@ -481,14 +482,14 @@ footer .wrapper {
     .activites_conteneur{
         display: flex;
         flex-direction: column;
-        width: 100%;
         height: 100%;
+        margin-left: 2%;
     }
 
     .activites_colonne{
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        max-width: 40%;
         height: 100%;
     }
     
