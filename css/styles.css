@@ -64,13 +64,13 @@ margin-bottom: 12px;
     height: 100%;
     text-decoration: none;
      
-    color: gray;
+    color: lightgray;
 }
 
 .sousTitreText{
     margin-bottom: 15px;
     margin-left: 0%;
-    color:gray;
+    color: lightgray;
 }
 
 .searchConteneur{
@@ -91,7 +91,6 @@ margin-bottom: 12px;
 
 .searchInput{
     height:100%;
-    border-color: lightgrey;
     border-style: solid;
     border-width: 1px;
     color: black;
@@ -111,7 +110,7 @@ margin-bottom: 12px;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: lightgray;
+    background-color:rgba(211, 211, 211, 0.328);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding-left: 10px;
@@ -132,9 +131,8 @@ margin-bottom: 12px;
     align-items: center;
     text-decoration: none;
     border-style: solid;
-    border-radius: 20px;
-    border-color: grey;
-    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgba(211, 211, 211, 0.865);
     max-height: 35px;
     margin-left: 15px;
 }
@@ -188,7 +186,7 @@ margin-bottom: 12px;
 }
 
 .hebergements {
-    background-color: lightgrey;
+    background-color:rgba(211, 211, 211, 0.328);
     display: flex;
     flex-direction: column;
     width: 65%;
@@ -230,13 +228,41 @@ margin-bottom: 12px;
 
 .titreHeb{
     font-size: 16px;
-     
+    margin: 8px;
     margin-left: 10px;
+}
+
+.starheb {
+    display: flex;
+    font-size: 12px;
+    padding-top: 8px;
+    margin-left: 8px;
+    color: rgba(0, 0, 255, 0.64);
+}
+
+.starpop {
+    display: flex;
+    font-size: 12px;
+    padding-top: 30px;
+    margin-left: 8px;
+    color: rgba(0, 0, 255, 0.64);
+}
+
+.star_pop{
+    display: flex;
+    font-size: 12px;
+    padding-top: 18px;
+    margin-left: 8px;
+    color: rgba(0, 0, 255, 0.64);
+}
+
+.star_white {
+    color: lightgrey;
+    display: flex;
 }
 
 .descriptionHeb{
     font-size: 13px;
-     
     color : grey;
     margin-left: 10px;
 }
@@ -258,7 +284,7 @@ margin-bottom: 12px;
 .populaires {
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
+    background-color:rgba(211, 211, 211, 0.328);
     width: 30%;
     border-radius: 20px;
     font-size:15px;
@@ -364,7 +390,7 @@ margin-bottom: 12px;
 }
 
 footer {
-    background-color:lightgray;
+    background-color:rgba(211, 211, 211, 0.328);
     width: 100%;
 }
 footer .wrapper {
