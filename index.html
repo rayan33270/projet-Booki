@@ -5,16 +5,23 @@
         <meta charset="utf-8" >
         <meta name="viewport" content="width=500" />
         <link rel="stylesheet" href="css/styles.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/fbf338b8a3.js" crossorigin="anonymous"></script>
         <title>Booki</title>
 </head> 
 
 <body>
-    
-   <header class="menu">
+   <div class="wrapper">
+
+    <header class="menu">
       
       <div class="headerTop">
-         <img src="image/Booki.png" alt="">
+         <img class="titreheader" src="image/Booki.png" >
          <nav>
             <ul class="headerTopList">
                <li><a class="headerMenuElement" href="#hebergements">Hébergements</a></li>
@@ -22,8 +29,9 @@
             </ul>
          </nav> 
       </div>
-      
+      <div id="sous_header">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+   </div>
       <p class="sousTitreText">
          En plein centre ville ou en pleine nature
       </p>
@@ -66,13 +74,11 @@
       
 
       <div class="informationConteneur">
-         <img src="image/info.png" width="20" height="20" alt="">
+         <img src="image/info.png" width="20" height="20">
          <p class="informationText">
-               Plus de 500 logements sont disponibles dans cet ville
+               Plus de 500 logements sont disponibles dans cette ville
          </p>
       </div>
-
-   </div>
 </header>
 
 <i></i>
@@ -129,6 +135,7 @@
 
 <!--POPULAIRE-->
    <section class="populaires">
+   
 
       <div  class="titre_popu">
          <h2> Les plus populaires </h2>
@@ -180,7 +187,9 @@
       <div class="activites_colonne">
          <article class="articleacti">
             <div class="imgActiConteneur">
-               <img class="imgacti" src="image/activite/Vieux_port.jpg"/> 
+               <div class="imgacti2">
+               <img class="imgacti" src="image/activite/Vieux_port.jpg"/>
+            </div>
             </div>
             <div class="titreActiConteneur">
                <h3 class="titreActi">Vieux Port</h3>
@@ -211,7 +220,9 @@
       <div class="activites_colonne">
          <article class="articleacti">
             <div class="imgActiConteneur">
-               <img class="imgacti" src="image/activite/Parc_calanques.jpg"/> 
+               <div class="imgacti2">
+               <img class="imgacti" src="image/activite/Parc_calanques.jpg"/>
+            </div> 
             </div>
             <div class="titreActiConteneur">
                <h3 class="titreActi">Parc National des Calanques</h3>
@@ -240,15 +251,18 @@
       </div>
    </div>
 </section>
+</div>
+
 
 
 <!--FOOTER-->
 
 <footer>
+   <div class="wrapper">
       
    <div class="footerColonneConteneur">
       <div class="footerTitleConteneur">
-         <h3>A propos</h3>
+         <h3 class="a_propos"> A propos</h3>
       </div>
       <div class="footerListConteneur">
          <ul id="footerList">
@@ -285,6 +299,7 @@
             </ul>
          </div>
    </div>
+</div>
 </footer>
 <!--FIN FOOTER-->
 </html>
