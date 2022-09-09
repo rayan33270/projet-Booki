@@ -95,7 +95,7 @@ h3
 
 .searchButton
 {
-	background-color: rgba(0, 0, 255, 0.733);
+	background-color: #2b66fd;
 	color: white;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -147,6 +147,9 @@ h3
 .filterElement
 {
 	display: flex;
+    position: relative;
+    line-height: 31px;
+    padding-left: 35px;
 	align-items: center;
 	text-decoration: none;
 	border-style: solid;
@@ -158,10 +161,12 @@ h3
 .filterImageConteneur
 {
 	display: flex;
+    position: absolute;
+    left: -2px;
 	justify-content: center;
 	align-items: center;
-	background-color:lightblue;
-	color:rgba(0, 0, 255, 0.733);
+	background-color:#e0ecff;
+	color:#2b66fd;
 	border-width: 1px;
 	border-radius: 20px;
 	height: 35px;
@@ -237,6 +242,7 @@ h3
 {
 	display: flex;
 	flex-wrap: wrap;
+    gap: 30px;
 	justify-content: space-between;
 	padding: 20px;
 	height: 375px;
@@ -246,7 +252,7 @@ h3
 {
 	align-items: center;
 	background-color:white;
-	width: 28%;
+	width: 30%;
 	height: 45%;
 	border-radius: 20px;
 	padding: 3px;
@@ -256,9 +262,14 @@ h3
 .imgHeb
 {
 	width: 100%;
-	max-height: 55%;
+    height: 100%;
+    object-fit:cover;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+}
+
+.imghebergement {
+    height: 95px;
 }
 
 .starheb
@@ -267,7 +278,7 @@ h3
 	font-size: 12px;
 	padding-top: 8px;
 	margin-left: 8px;
-	color: rgba(0, 0, 255, 0.64);
+	color: #2b66fd;
 }
 
 .starpop
@@ -276,7 +287,7 @@ h3
 	font-size: 12px;
 	padding-top: 30px;
 	margin-left: 8px;
-	color: rgba(0, 0, 255, 0.64);
+	color: #2b66fd;
 }
 
 .star_pop
@@ -285,7 +296,7 @@ h3
 	font-size: 12px;
 	padding-top: 18px;
 	margin-left: 8px;
-	color: rgba(0, 0, 255, 0.64);
+	color: #2b66fd;
 }
 
 .star_white
