@@ -12,6 +12,29 @@ body
 	font-family: 'Raleway', sans-serif;
 }
 
+.articleCliquableHebergement{
+	text-decoration:none;
+	color : black;
+	border-radius: 20px;
+}
+
+.articleCliquablePopulaire{
+	display:flex;
+	flex-direction: row;
+	text-decoration:none;
+	color : black;
+	border-radius: 20px;
+}
+
+.articleCliquableActivite{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 0;
+	text-decoration:none;
+	color : black;
+	border-radius: 20px;
+}
+
 .imgacti
 {
 	display: flex;
@@ -32,6 +55,11 @@ h1
 h3
 {
 	font-weight: 600;
+}
+
+h4{
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .titreheader
@@ -95,6 +123,7 @@ h3
 
 ul.headerTopUL li a:hover,ul#nav li.active a{
 	border-top-style: solid;
+	border-top-width: 2px;
 	border-top-color: #2b66fd;
 	color:#2b66fd;
    }
@@ -107,20 +136,8 @@ ul.headerTopUL li a:hover,ul#nav li.active a{
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
-}
-
-.headerMenuElement:active {
-	color: green;
-  }
-
-
-.headerMenuElement2
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	text-decoration: none;
+	border-top-style: solid;
+	border-top-color: transparent;
 }
 
 .sousTitreText
@@ -144,7 +161,13 @@ ul.headerTopUL li a:hover,ul#nav li.active a{
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border-width: 0px;
-	padding: 14px;
+	padding: 15px;
+    cursor: pointer;
+}
+
+.searchButtonLoupe
+{
+	display: none;
 }
 
 .searchInput
@@ -199,7 +222,7 @@ ul.headerTopUL li a:hover,ul#nav li.active a{
 	text-decoration: none;
 	border-style: solid;
 	border-radius: 30px;
-	border-color: rgba(211, 211, 211, 0.865);
+	border-color: #deebff;
 	margin-left: 15px;
 	margin: 10px;
 }
@@ -449,16 +472,14 @@ ul.headerTopUL li a:hover,ul#nav li.active a{
 	border-radius: 20px;
 }
 
-.titre_acti
-{
-	padding-left: 2%;
-}
+
 
 .activites_conteneur
 {
 	display: flex;
 	flex-direction: row;
-	height: 311px;
+	justify-content: space-between;
+	height: 350px;
 	margin-bottom: 4%;
 }
 
@@ -466,8 +487,9 @@ ul.headerTopUL li a:hover,ul#nav li.active a{
 {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	padding: 0px;
-	max-width: 25%;
+	max-width: 24%;
 }
 
 .articleacti
@@ -475,9 +497,10 @@ ul.headerTopUL li a:hover,ul#nav li.active a{
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 0;
-	margin: 20px;
 	border-radius: 20px;
 	box-shadow: -1px 2px 2px lightgrey;
+	margin-top: 7px;
+	margin-bottom: 7px;
 }
 
 .imgActiConteneur
@@ -517,20 +540,17 @@ footer
 footer .wrapper
 {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 .footerColonneConteneur
 {
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
 	width: 30%;
-}
-
-.a_propos
-{
-	margin-top: 7%;
-    margin-left: 1%;
+	padding-left: 10px;
 }
 
 .footerTitleConteneur
@@ -549,12 +569,12 @@ footer .wrapper
 	justify-content: flex-start;
 }
 
-#footerList
+.footerList
 {
 	list-style: none;
 }
 
-#footerLi
+.footerLi
 {
 	margin-bottom: 10px ;
 }
@@ -564,6 +584,8 @@ footer .wrapper
 	list-style: none;
 	text-decoration: none;
 	color: black;
+	margin-bottom: 10px ;
+	font-size: 13px;
 }
 
 @media screen and (max-width: 1024px)
@@ -586,7 +608,6 @@ footer .wrapper
 
 	.hebergements
 	{
-		background-color: lightgrey;
 		display: flex;
 		width: 100%;
 		margin-top: 20px;
@@ -599,7 +620,6 @@ footer .wrapper
 	{
 		display: flex;
 		flex-direction: column;
-		background-color: lightgray;
 		width: 100%;
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -622,7 +642,6 @@ footer .wrapper
 		display:flex;
 		flex-direction: row;
 		margin: 10px;
-		align-items: space-between;
 		border-radius: 20px;
 		background-color: white;
 		width: 30%;
@@ -657,8 +676,10 @@ footer .wrapper
 	{
 		display: block;
 		border-radius: 20px;
-		width: 100%;
+		width: 90%;
 		height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 
 	.titre_acti
@@ -667,200 +688,24 @@ footer .wrapper
 	}
 }
 
+
 @media screen and (max-width: 768px)
 {
-
-	.hebergements_populaire
+	.searchButton
 	{
-		display: flex;
-		flex-direction: column;
-		flex-direction: column-reverse;
-		align-items: center;
-		border-radius: 20px;
-		max-width: 90%;
-		margin : auto;
-	}
-
-	.hebergements
-	{
-		display: flex;
-		background-color: white;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		border-radius: 20px;
-		font-size: 15px;
-	}
-
-	.conteneur_articlesheb
-	{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		align-items: center;
-		/*gap: 30px;*/
-		padding: 20px;
-		width: 90%;
-		height: 100%; 
-	}
-	.articleheb
-	{
-		align-items: center;
-		background-color:white;
-		width: 100%;
-		height: 45%;
-		border-radius: 20px;
-		padding: 3px;
-		flex-wrap: nowrap;
-		margin: 20px 20px;
-		box-shadow: -5px 5px 5px lightgrey;
-
+		display: none;
 	}
 	
-	.populaires
+	.searchButtonLoupe
 	{
 		display: flex;
-		flex-direction: column;
-		background-color: lightgray;
-		width: 100%;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		border-radius: 20px;
-		font-size:15px;
+		background-color: #2b66fd;
+		color: white;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-width: 0px;
+		padding: 16px;
 	}
-
-		.conteneur_articlespop
-	{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 20px;
-		height: 410px;
-	}
-
-	.articlepopu
-	{
-		display:flex;
-		flex-direction: row;
-		margin: 10px;
-		border-radius: 20px;
-		background-color: white;
-		width: 100%;
-		min-height: 30%;
-		padding: 3px;
-	}
-
-	.imgpop
-	{
-		width: 100%;
-		height: 100%;
-		object-fit:cover;
-		border-top-left-radius: 20px;
-		border-bottom-left-radius: 20px;
-	}
-
-	.infopop
-	{
-		width: 60%;
-		padding: 5px;
-	}
-
-
-	.titre_acti
-	{
-		padding-left: 4%;
-	}
-
-	.activites
-	{
-		display: block;
-		flex-direction: column;
-		border-radius: 20px;
-		width: 100%;
-		height: auto;
-        
-    }
-
-	.activites_conteneur
-	{
-		display: block;
-		height: auto;
-    }
-
-	.activites_colonne
-	{
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
-
-	.articleacti
-	{
-		height: 200px;
-		border-radius: 20px;
-		box-shadow: -5px 5px 5px lightgrey;
-	}
-
-	.imgActiConteneur
-	{
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-	}
-
-	.titreActiConteneur
-	{
-		border-bottom-left-radius: 20px;
-		border-bottom-right-radius: 20px;
-	}
-
-	footer .wrapper
-	{
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-		width: 80%;
-		margin: auto;
-	}
-
-	.footerColonneConteneur
-	{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		margin: 2%;
-	}
-
-	.footerTitleConteneur
-	{
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		margin-bottom: 4%;
-	}
-
-	.footerListConteneur
-	{
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-	}
-}
-
-
-@media screen and (max-width: 768px)
-{
-    .searchButton
-{
-	background-color: #2b66fd;
-	color: white;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-width: 0px;
-	padding: 14px;
-}
     
 
 
@@ -876,15 +721,35 @@ footer .wrapper
 	{
 		align-items: center;
 		flex-direction: column;
+		margin-bottom: 10px;
+	}
+
+	.headerTopUL
+	{
+		height: 70px;
 	}
 
 	ul.headerTopUL li a:hover,ul#nav li.active a{
 		border-top-style: none;
 		border-bottom-style: solid;
+		border-bottom-width: 2px;
 		border-bottom-color: #2b66fd;
 		color:#2b66fd;
 		margin-bottom: 20px;
 	   }
+	
+	.headerMenuElement
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		border-top-style: none;
+		border-bottom-style: solid;
+		border-bottom-color: transparent;
+	}
 
 	.hebergements_populaire
 	{
@@ -940,7 +805,6 @@ footer .wrapper
 	{
 		display: flex;
 		flex-direction: column;
-		background-color: lightgray;
 		width: 100%;
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -1037,7 +901,7 @@ footer .wrapper
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
-		width: 80%;
+		width: 100%;
 		margin: auto;
 	}
 
@@ -1064,21 +928,3 @@ footer .wrapper
 		justify-content: flex-start;
 	}
 } 
-
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2)
-	{ 
-		.hebergements_populaire
-		{
-			display: flex;
-			flex-direction: column;
-			background-color: rgb(255, 255, 255);
-			background-color: red;
-			border-radius: 20px;
-			width: 55%;
-			height: 55%;
-			margin: 40px;
-		}
-	}
